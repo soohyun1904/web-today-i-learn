@@ -6,6 +6,7 @@ body {
     "Helvetica Neue", sans-serif;
   font-size: 16px;
   color: var(--font-default-color);
+  background-color: #f8fafc;
 }
 
 h1,

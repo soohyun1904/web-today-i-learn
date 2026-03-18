@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
@@ -30,11 +30,11 @@
       <div class="profile-card">
         <div class="profile-image">
           <!-- TODO: 프로필 이미지를 넣어주세요 -->
-          <!-- <img src="./images/profile.jpg" alt="프로필 사진" /> -->
+          <img src="/images/profile.jpg" alt="프로필 사진" />
         </div>
         <div class="profile-info">
-          <h1>닉네임</h1>
-          <p class="tagline">한 줄 소개를 작성해주세요.</p>
+          <h1>달수</h1>
+          <p class="tagline">8기 백엔드 달수입니다.</p>
         </div>
       </div>
     </section>
@@ -43,7 +43,8 @@
       <!-- 자기소개 -->
       <section class="content-section">
         <h2>자기소개</h2>
-        <p>자기소개를 작성해주세요.</p>
+        <p>8기 백엔드 달수입니다.</p>
+        <a href="https://github.com/soohyun1904">github</a>
         <!-- TODO: 소개 글 안에 블로그, GitHub 등 관련 링크를 <a> 태그로 연결하세요 -->
       </section>
 
@@ -54,19 +55,19 @@
         <table class="info-table">
           <tr>
             <th>이름</th>
-            <td></td>
+            <td>이수현</td>
           </tr>
           <tr>
             <th>MBTI</th>
-            <td></td>
+            <td>ISTP</td>
           </tr>
           <tr>
             <th>취미</th>
-            <td></td>
+            <td>헬스</td>
           </tr>
           <tr>
             <th>좋아하는 음식</th>
-            <td></td>
+            <td>제육볶음, 버거킹</td>
           </tr>
         </table>
       </section>
@@ -74,8 +75,17 @@
       <!-- 나만의 갤러리 -->
       <section class="content-section" id="gallery">
         <h2>나만의 갤러리</h2>
-        <p class="section-desc">갤러리 부제를 작성해주세요. (예: 기억에 남는 여행지)</p>
+        <p class="section-desc">뚱이</p>
         <div class="gallery-grid">
+          <img src="/images/gallery-1.jpeg" alt="갤러리 이미지 1" />
+          <img src="/images/gallery-2.jpeg" alt="갤러리 이미지 2" />
+          <img src="/images/gallery-3.jpeg" alt="갤러리 이미지 3" />
+          <img src="/images/gallery-4.jpeg" alt="갤러리 이미지 4" />
+          <img src="/images/gallery-5.jpeg" alt="갤러리 이미지 5" />
+          <img src="/images/gallery-6.jpeg" alt="갤러리 이미지 6" />
+          <img src="/images/gallery-7.jpeg" alt="갤러리 이미지 7" />
+          <img src="/images/gallery-8.jpeg" alt="갤러리 이미지 8" />
+          <img src="/images/gallery-9.jpeg" alt="갤러리 이미지 9" />
           <!-- TODO: 9장의 이미지를 배치하세요 -->
           <!--
           <img src="./images/gallery-1.jpg" alt="갤러리 이미지 1" />
@@ -91,13 +101,38 @@
         <div class="works-list">
           <!-- TODO: 최소 2가지 작품을 소개하세요 -->
           <!-- TODO: 작품 중 하나는 <video> 또는 <iframe>으로 영상을 삽입하세요 -->
-          <article class="work-card">
-            <div class="work-thumbnail">
-              <!-- 작품 이미지 -->
-            </div>
+          <article
+            class="work-card"
+            style="flex-direction: column; max-width: 560px"
+          >
+            <iframe
+              width="100%;max-width: 100%;"
+              height="315"
+              src="https://www.youtube.com/embed/igXa9oeAcQY"
+              title="비가 오면"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
             <div class="work-info">
-              <h3>작품 제목</h3>
-              <p>작품에 대한 설명을 작성해주세요.</p>
+              <h3>비가 오면</h3>
+              <p>좋은 노래입니다.</p>
+            </div>
+          </article>
+          <article
+            class="work-card"
+            style="flex-direction: column; max-width: 560px"
+          >
+            <iframe
+              width="100%; max-width: 100%;"
+              height="315"
+              src="https://www.youtube.com/embed/8XDI2kk6qQU"
+              title="Lost Stars"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <div class="work-info">
+              <h3>Lost Stars</h3>
+              <p>좋은 노래입니다.</p>
             </div>
           </article>
         </div>
@@ -116,11 +151,22 @@
           </div>
           <div class="form-group">
             <label for="til-title">제목</label>
-            <input type="text" id="til-title" name="title" placeholder="학습 주제를 입력하세요" required />
+            <input
+              type="text"
+              id="til-title"
+              name="title"
+              placeholder="학습 주제를 입력하세요"
+              required
+            />
           </div>
           <div class="form-group">
             <label for="til-content">내용</label>
-            <textarea id="til-content" name="content" placeholder="오늘 배운 내용을 정리해주세요" required></textarea>
+            <textarea
+              id="til-content"
+              name="content"
+              placeholder="오늘 배운 내용을 정리해주세요"
+              required
+            ></textarea>
           </div>
           <div class="form-actions">
             <button type="submit">등록</button>
@@ -134,11 +180,13 @@
           <article class="til-item">
             <time>2026-03-15</time>
             <h3>HTML 시멘틱 태그</h3>
-            <p>header, nav, main, section, article, footer 등 시멘틱 태그의 역할과 사용법을 배웠다.</p>
+            <p>
+              header, nav, main, section, article, footer 등 시멘틱 태그의
+              역할과 사용법을 배웠다.
+            </p>
           </article>
         </div>
       </section>
-
     </main>
 
     <footer>
